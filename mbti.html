@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 쿨함 테스트</title>
+
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="mbti.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+</head>
+<body class="container">
+    <div class="cont title-container">
+        <h1><b>나의 쿨함 테스트</b></h1>
+        <h3>나는 얼마나 쿨한 사람일까?</h3>
+        <img id="cool-img" src="쿨남.png" alt="쿨남">
+        <button id="startBtn" class="btn"><h3><b>테스트 하러가기</b></h3></button>
+    </div>
+
+    <div class="cont question-container">          
+        <h3 id="question" class="mt-5">질문</h3>
+        <p id="type">A or B</p>
+        <button id="a" class="btn">A</button>
+        <button id="b" class="btn">B</button>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="12"></div>
+        </div>
+        <div id="progress-text">진행률: 0/12</div>
+    </div>
+    <div class="cont result-container">
+        <h1 id="COOL"><b>쿨남</b></h1>
+        <br>
+        <h3 id="explain">설명</h3>
+        <img id="result-img" src="" alt="">
+    </div>
+
+    <div class="score-container">
+        <input id="A" type="text" class="input" value="0">
+        <input id="B" type="text" class="input" value="0">
+    </div>
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="mbti.js"></script>
+</body>
+</html>
